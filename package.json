@@ -1,0 +1,22 @@
+{
+  "name": "spampoder",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "yarn run image && vite build",
+    "serve": "vite preview",
+    "postinstall": "mkdir -p node_modules/.vite/lib/openseadragon/ public/lib/openseadragon/ && cp node_modules/openseadragon/build/openseadragon/openseadragon.min.js node_modules/.vite/lib/openseadragon/ && cp node_modules/openseadragon/build/openseadragon/openseadragon.min.js public/lib/openseadragon/",
+    "image": "mkdir -p public/image/ && node scripts/image.js"
+  },
+  "devDependencies": {
+    "sharp": "^0.28.3",
+    "vite": "^2.4.4"
+  },
+  "dependencies": {
+    "@lrnwebcomponents/hexagon-loader": "^3.0.6",
+    "@lrnwebcomponents/img-pan-zoom": "^3.0.6",
+    "lit-element": "^2.5.1",
+    "openseadragon": "^2.4.2"
+  }
+}
