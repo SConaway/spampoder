@@ -1,5 +1,3 @@
-import './style.css'
-
 import '@lrnwebcomponents/img-pan-zoom'
 
 document.querySelector('#app').innerHTML = `
