@@ -7,7 +7,7 @@
     "build": "yarn run image && vite build",
     "serve": "vite preview",
     "postinstall": "mkdir -p node_modules/.vite/lib/openseadragon/ public/lib/openseadragon/ && cp node_modules/openseadragon/build/openseadragon/openseadragon.min.js node_modules/.vite/lib/openseadragon/ && cp node_modules/openseadragon/build/openseadragon/openseadragon.min.js public/lib/openseadragon/",
-    "image": "mkdir -p public/image/ && node scripts/image.js"
+    "image": "mkdir -p public/image/ && node scripts/image.js && cp sammmm.png public/"
   },
   "devDependencies": {
     "sharp": "^0.28.3",
